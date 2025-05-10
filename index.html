@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="color-selection">
+                <input id="color-picker" type="color">
+                <select name="color-scheme" id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="generate-color-btn">Get color scheme</button>
+        </header>     
+        <main>
+            </div>
+            <div class="color-display">
+                <div>
+                    <div id="color-1" class="color"></div>
+                    <p id="color-1-hex" class="hex-value">#ff99c8</p>
+                </div>
+                <div>
+                    <div id="color-2" class="color"></div>
+                    <p id="color-2-hex" class="hex-value">#fcf6bd</p>
+                </div>
+                <div>
+                    <div id="color-3" class="color"></div>
+                    <p id="color-3-hex" class="hex-value">#d0f4de</p>
+                </div>
+                <div>
+                    <div id="color-4" class="color"></div>
+                    <p id="color-4-hex" class="hex-value">#a9def9</p>
+                </div>
+                <div>
+                    <div id="color-5" class="color"></div>
+                    <p id="color-5-hex" class="hex-value">#e4c1f9</p>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

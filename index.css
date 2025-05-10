@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #D5D4D8;
+}
+
+body{
+    margin: 0;
+    background-color: #1F2937;
+}
+
+/* header section */
+.color-selection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 12.5vh;
+}
+
+/* main color display */
+.color-display{
+    display: grid;
+    /* border: 3px solid red; */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "c1 c2 c3 c4 c5";
+}
+
+/* div that displays the color */
+.color{
+    height: 75vh;
+    margin: 0;
+    /* border: 2px solid; */
+}
+
+/* div with the hex value inside */
+.hex-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* border: 2px solid; */
+    height: 12.5vh;
+}
+
+#color-1{
+    background-color: #ff99c8;
+    grid-area: c1;
+}
+
+#color-2{
+    background-color: #fcf6bd;
+    grid-area: c2;
+}
+
+#color-3{
+    background-color: #d0f4de;
+    grid: c3;
+}
+
+#color-4{
+    background-color: #a9def9;
+    grid: c4;
+}
+
+#color-5{
+    background-color: #e4c1f9;
+    grid: c5;
+}
+
+/* header */
+
+header{
+    margin: 0 0.25rem;
+}
+
+button, select{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #1F293A;
+    border: 2px solid #D1D5DB;
+    color: inherit;
+    border-radius: 5px;
+}
+
+input{
+    width: 4rem;
+    height: 2.5rem;
+    border: 2px solid #E5E5E5;
+    padding: 0;
+}
+
+select{
+    padding: 0.5rem 0.25rem;
+}
+
+button{
+    height: 2.5rem;
+}
+
+@media (min-width: 768px){
+    .color-selection{
+        justify-content: left;    
+    }
+    
+    input, button, select{
+        margin: 0.5rem;
+    }
+}
